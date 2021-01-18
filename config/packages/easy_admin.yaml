@@ -1,0 +1,9 @@
+easy_admin:
+  entities:
+    Product:
+      class: App\Entity\Product
+
+    Offer:
+      class: App\Entity\Offer
+
+

@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  mysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_USER: mijn
+      MYSQL_PASSWORD: eenheelerglangenlastigteradenwachtwoord
+      MYSQL_DATABASE: api-platform-test
+      MYSQL_ROOT_PASSWORD: toor
+    ports:
+      - '3313:3306'
