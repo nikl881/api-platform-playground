@@ -6,9 +6,11 @@ use ApiPlatform\Core\Annotation\ApiProperty;
 use ApiPlatform\Core\Annotation\ApiResource;
 use App\Repository\ProductRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
 
 /**
  * @ApiResource()
+ * @Vich\Uploadable()
  * @ORM\Entity(repositoryClass=ProductRepository::class)
  */
 class Product
@@ -30,12 +32,26 @@ class Product
      */
     private $description;
 
+
     /**
-     * @var string|null
-     * @ORM\Column(type="text", nullable=true)
-     * @ApiProperty(iri="http://schema.org/image")
+     * @ORM\Column (type="string", length=100)
      */
-    private $image;
+    private $thumbnail_image;
+
+    /**
+     * @Vich\UploadableField(mapping="thumbnails", fileNameProperty="thumbnail_image")
+     */
+    private $thumbnailFile;
+
+    /**
+     * @ORM\Column (type="datetime")
+     */
+    private $updatedAt;
+
+    public function __construct()
+    {
+        $this->updatedAt = new \DateTime();
+    }
 
     public function getId(): ?int
     {
@@ -66,15 +82,42 @@ class Product
         return $this;
     }
 
-    public function getImage(): ?string
+    /**
+     * @return mixed
+     */
+    public function getThumbnailImage()
     {
-        return $this->image;
+        return $this->thumbnail_image;
     }
 
-    public function setImage(string $image): self
+    /**
+     * @param mixed $thumbnail_image
+     */
+    public function setThumbnailImage($thumbnail_image): void
     {
-        $this->image = $image;
+        $this->thumbnail_image = $thumbnail_image;
 
-        return $this;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getThumbnailFile()
+    {
+        return $this->thumbnailFile;
+    }
+
+    /**
+     * @param mixed $thumbnailFile
+     */
+    public function setThumbnailFile($thumbnailFile): void
+    {
+        $this->thumbnailFile = $thumbnailFile;
+
+        if ($thumbnailFile) {
+            $this->updatedAt = new \DateTime();
+        }
+    }
+
+
 }
