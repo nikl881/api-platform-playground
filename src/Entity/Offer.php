@@ -2,9 +2,11 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Core\Annotation\ApiProperty;
 use ApiPlatform\Core\Annotation\ApiResource;
 use App\Repository\OfferRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ApiResource()
@@ -25,7 +27,10 @@ class Offer
     private $url;
 
     /**
-     * @ORM\Column(type="integer")
+     * @var float
+     * @ORM\Column(type="float")
+     * @ApiProperty(iri="http://schema.org/price")
+     * @Assert\NotNull
      */
     private $price;
 
@@ -74,4 +79,5 @@ class Offer
 
         return $this;
     }
+
 }

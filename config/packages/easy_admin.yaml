@@ -1,9 +1,22 @@
 easy_admin:
+  site_name: 'Test name'
   entities:
     Product:
       class: App\Entity\Product
+      list:
+        title: "Products list"
+        fields:
+          - { property: 'name' }
+          - { property: 'image', type: 'image' }
 
     Offer:
       class: App\Entity\Offer
+      list:
+        title: "Offers list"
+        fields: ['url','price','priceCurrency']
 
-
+  design:
+    menu:
+      - Product
+      - Offer
+      - { label: 'Logout', url: '/logout' }

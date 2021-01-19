@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Core\Annotation\ApiProperty;
 use ApiPlatform\Core\Annotation\ApiResource;
 use App\Repository\ProductRepository;
 use Doctrine\ORM\Mapping as ORM;
@@ -30,7 +31,9 @@ class Product
     private $description;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @var string|null
+     * @ORM\Column(type="text", nullable=true)
+     * @ApiProperty(iri="http://schema.org/image")
      */
     private $image;
 
