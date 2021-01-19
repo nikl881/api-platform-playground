@@ -5,8 +5,11 @@ namespace App\Entity;
 use ApiPlatform\Core\Annotation\ApiProperty;
 use ApiPlatform\Core\Annotation\ApiResource;
 use App\Repository\ProductRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Vich\UploaderBundle\Mapping\Annotation as Vich;
+use function Symfony\Component\Translation\t;
 
 /**
  * @ApiResource()
@@ -48,9 +51,15 @@ class Product
      */
     private $updatedAt;
 
+    /**
+     * @ORM\OneToMany(targetEntity=Offer::class, mappedBy="product")
+     */
+    private $offers;
+
     public function __construct()
     {
         $this->updatedAt = new \DateTime();
+        $this->offers = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -119,5 +128,39 @@ class Product
         }
     }
 
+    /**
+     * @return Collection|Offer[]
+     */
+    public function getOffers(): Collection
+    {
+        return $this->offers;
+    }
+
+    public function addOffer(Offer $offer): self
+    {
+        if (!$this->offers->contains($offer)) {
+            $this->offers[] = $offer;
+            $offer->setProduct($this);
+        }
+
+        return $this;
+    }
+
+    public function removeOffer(Offer $offer): self
+    {
+        if ($this->offers->removeElement($offer)) {
+            // set the owning side to null (unless already changed)
+            if ($offer->getProduct() === $this) {
+                $offer->setProduct(null);
+            }
+        }
+
+        return $this;
+    }
+
+    public function __toString()
+    {
+        return $this->name;
+    }
 
 }

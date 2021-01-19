@@ -10,7 +10,7 @@ use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ApiResource()
- * @ORM\Entity(repositoryClass=OfferRepository::class)
+ * @ORM\Entity(repositoryClass="App\Repository\OfferRepository", repositoryClass=OfferRepository::class)
  */
 class Offer
 {
@@ -38,6 +38,11 @@ class Offer
      * @ORM\Column(type="string", length=255)
      */
     private $priceCurrency;
+
+    /**
+     * @ORM\ManyToOne(targetEntity=Product::class, inversedBy="offers")
+     */
+    private $product;
 
     public function getId(): ?int
     {
@@ -78,6 +83,23 @@ class Offer
         $this->priceCurrency = $priceCurrency;
 
         return $this;
+    }
+
+    public function getProduct(): ?Product
+    {
+        return $this->product;
+    }
+
+    public function setProduct(?Product $product): self
+    {
+        $this->product = $product;
+
+        return $this;
+    }
+
+    public function __toString()
+    {
+        return $this->url;
     }
 
 }
