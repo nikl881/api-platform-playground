@@ -25,6 +25,7 @@ class ProductCrudController extends AbstractCrudController
         $imageFile = TextareaField::new('thumbnailFile')->setFormType(VichImageType::class);
         $image = ImageField::new('thumbnail_image')->setBasePath('/images/thumbnails');
 
+
         $fields = [
             TextField::new('name'),
             TextEditorField::new('description'),

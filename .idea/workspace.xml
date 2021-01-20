@@ -20,8 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a978a308-d810-42f2-9c3e-398e3b75f3fa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/clientApp/src/pagination.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/clientApp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientApp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/clientApp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientApp/libraries/axios.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientApp/src/getData.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientApp/src/getData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientApp/src/view.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientApp/src/view.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/ProductCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/ProductCrudController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,6 +167,16 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/api-platform-playground/clientApp/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -171,6 +187,7 @@
       <updated>1610962298748</updated>
       <workItem from="1610962301573" duration="8743000" />
       <workItem from="1611040009408" duration="14446000" />
+      <workItem from="1611144387787" duration="4675000" />
     </task>
     <servers />
   </component>
@@ -187,5 +204,16 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611144598564">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1680.26.1680.1010@0.0.1920.1040" timestamp="1611144598564" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1611144515505">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1680.26.1680.1010@0.0.1920.1040" timestamp="1611144515505" />
   </component>
 </project>

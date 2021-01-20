@@ -4,17 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Product list</title>
-
-    <script src="./libraries/axios.js"></script>
+    <title>Product index list</title>
+    <style>
+        .display-none{
+            display: none;
+        }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script type="module" src="./app.js"></script>
 </head>
-
 <body>
-<h1>Products list</h1>
 
+<h1>Product index list</h1>
+<a id="back-link" class="display-none" href="#">&laquo;Back</a>
+<a id="next-link" class="display-none" href="#">Next&raquo;</a>
 <div id="products-list"></div>
 
 </body>
-
 </html>
