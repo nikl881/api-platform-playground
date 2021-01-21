@@ -20,14 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a978a308-d810-42f2-9c3e-398e3b75f3fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/clientApp/src/pagination.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientApp/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientApp/src/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/api-platform-playground.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/api-platform-playground.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/clientApp/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clientApp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/clientApp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientApp/libraries/axios.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/clientApp/src/getData.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientApp/src/getData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientApp/src/view.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientApp/src/view.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/ProductCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/ProductCrudController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,6 +158,20 @@
       <path value="$PROJECT_DIR$/vendor/easycorp/easyadmin-bundle" />
       <path value="$PROJECT_DIR$/vendor/vich/uploader-bundle" />
       <path value="$PROJECT_DIR$/vendor/jms/metadata" />
+      <path value="$PROJECT_DIR$/vendor/evenement/evenement" />
+      <path value="$PROJECT_DIR$/vendor/react/stream" />
+      <path value="$PROJECT_DIR$/vendor/react/promise-timer" />
+      <path value="$PROJECT_DIR$/vendor/react/socket" />
+      <path value="$PROJECT_DIR$/vendor/react/event-loop" />
+      <path value="$PROJECT_DIR$/vendor/react/promise" />
+      <path value="$PROJECT_DIR$/vendor/react/cache" />
+      <path value="$PROJECT_DIR$/vendor/react/dns" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/react/promise-stream" />
+      <path value="$PROJECT_DIR$/vendor/ringcentral/psr7" />
+      <path value="$PROJECT_DIR$/vendor/react/http" />
+      <path value="$PROJECT_DIR$/vendor/react/react" />
+      <path value="$PROJECT_DIR$/vendor/symfony/webpack-encore-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1nEjlpk5q8dRRCvfaRK4JcpnoAL" />
@@ -163,8 +182,16 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.linters.configure.manually.selectedeslint" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -187,7 +214,10 @@
       <updated>1610962298748</updated>
       <workItem from="1610962301573" duration="8743000" />
       <workItem from="1611040009408" duration="14446000" />
-      <workItem from="1611144387787" duration="4675000" />
+      <workItem from="1611144387787" duration="7910000" />
+      <workItem from="1611162163543" duration="2927000" />
+      <workItem from="1611216428013" duration="119000" />
+      <workItem from="1611216560145" duration="442000" />
     </task>
     <servers />
   </component>
@@ -211,6 +241,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1680.26.1680.1010@0.0.1920.1040" timestamp="1611144598564" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1611164508420">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/-1680.26.1680.1010@0.0.1920.1040" timestamp="1611164508420" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1611144515505">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
