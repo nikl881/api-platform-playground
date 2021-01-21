@@ -6,22 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Product index list</title>
     <style>
-        .display-none{
+        .display-none {
             display: none;
         }
     </style>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script type="module" src="./app.js"></script>
 </head>
 <body>
-<div class="container">
-    <div class="header">
-<h1 class="display-3">Product index list</h1>
+<nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1">Product app</span>
+</nav>
+
+<p><a id="order-by-name" class="display-none" href="#">order by name</a></p>
+
+<div class="container" style="padding-top: 70px">
+    <a id="back-link" class="display-none" href="#">&laquo;Back</a>
+    <a id="next-link" class="display-none" href="#">Next&raquo;</a>
+    <div class="card">
+        <div class="card-header">
+            Product index
+        </div>
+        <div id="products-list"></div>
+
     </div>
-<a id="back-link" class="display-none" href="#">&laquo;Back</a>
-<a id="next-link" class="display-none" href="#">Next&raquo;</a>
-<div id="products-list"></div>
 </div>
 </body>
 </html>
