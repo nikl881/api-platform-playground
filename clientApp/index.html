@@ -14,23 +14,32 @@
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script type="module" src="./app.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+          integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+          crossorigin="anonymous"/>
 </head>
 <body>
+
 <nav class="navbar navbar-light bg-light">
     <span class="navbar-brand mb-0 h1">Product app</span>
 </nav>
-
-<p><a id="order-by-name" class="display-none" href="#">order by name</a></p>
-
 <div class="container" style="padding-top: 70px">
+
+    <div style="margin-bottom: 30px">
+        <input id="searched-text" type="text">
+        <input id="search-button" type="button" value="search">
+    </div>
     <a id="back-link" class="display-none" href="#">&laquo;Back</a>
     <a id="next-link" class="display-none" href="#">Next&raquo;</a>
     <div class="card">
         <div class="card-header">
             Product index
         </div>
+        <a href="#" id="order-by-name" class="btn btn-primary display-none" role="button" aria-pressed="true"><i
+                class="fas fa-sort-alpha-down"></i> Order by name</a>
+        <a href="#" id="filter-images-only" class="btn btn-secondary display-none" role="button" aria-pressed="true"><i
+                class="fas fa-image"></i> Only with image</a>
         <div id="products-list"></div>
-
     </div>
 </div>
 </body>

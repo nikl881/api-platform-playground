@@ -7,7 +7,9 @@ export function show(data) {
     item.innerHTML = '';
 
     for (var i = 0; i <= data.length - 1; i++) {
-        if (typeof data[i].thumbnailImage !== 'undefined') var imageUrl = baseURL + '/images/thumbnails/' + data[i].thumbnailImage;
+        if (typeof data[i].thumbnailImage !== 'undefined')
+            var imageUrl = baseURL + '/images/thumbnails/' + data[i].thumbnailImage;
+
         // eslint-disable-next-line no-redeclare
         else var imageUrl = '';
 

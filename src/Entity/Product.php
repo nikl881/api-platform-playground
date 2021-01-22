@@ -4,7 +4,8 @@ namespace App\Entity;
 
 use ApiPlatform\Core\Annotation\ApiFilter;
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\OrderFilter;
-use ApiPlatform\Core\Annotation\ApiProperty;
+use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\ExistsFilter;
+use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\SearchFilter;
 use ApiPlatform\Core\Annotation\ApiResource;
 use App\Repository\ProductRepository;
 use Doctrine\Common\Collections\ArrayCollection;
@@ -18,6 +19,8 @@ use Vich\UploaderBundle\Mapping\Annotation as Vich;
  * @Vich\Uploadable()
  * @ORM\Entity(repositoryClass=ProductRepository::class)
  * @ApiFilter(OrderFilter::class, properties={"id", "name"}, arguments={"orderParameterName"="order"})
+ * @ApiFilter(ExistsFilter::class, properties={"thumbnail_image"})
+ * @ApiFilter (SearchFilter::class, properties={"id": "exact", "name":"partial", "description": "partial"})
  */
 class Product
 {
@@ -40,7 +43,7 @@ class Product
 
 
     /**
-     * @ORM\Column (type="string", length=100)
+     * @ORM\Column (type="string", length=100, nullable=true)
      */
     private $thumbnail_image;
 
