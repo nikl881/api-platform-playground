@@ -11,11 +11,12 @@ use App\Repository\ProductRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Annotation\Groups;
 use Vich\UploaderBundle\Mapping\Annotation as Vich;
 
 
 /**
- * @ApiResource()
+ * @ApiResource(iri="http://schema.org/Product", normalizationContext={"groups"={"read"}}, denormalizationContext={"groups"={"write"}})
  * @Vich\Uploadable()
  * @ORM\Entity(repositoryClass=ProductRepository::class)
  * @ApiFilter(OrderFilter::class, properties={"id", "name"}, arguments={"orderParameterName"="order"})
@@ -28,37 +29,43 @@ class Product
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
+     * @Groups ({"read"})
      */
     private $id;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups ({"read","write"})
      */
     private $name;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups ({"read","write"})
      */
     private $description;
 
-
     /**
      * @ORM\Column (type="string", length=100, nullable=true)
+     * @Groups ({"read","write"})
      */
     private $thumbnail_image;
 
     /**
      * @Vich\UploadableField(mapping="thumbnails", fileNameProperty="thumbnail_image")
+     * @Groups ({"read","write"})
      */
     private $thumbnailFile;
 
     /**
      * @ORM\Column (type="datetime")
+     * @Groups ({"read", "write"})
      */
     private $updatedAt;
 
     /**
-     * @ORM\OneToMany(targetEntity=Offer::class, mappedBy="product")
+     * @ORM\OneToMany(targetEntity=Offer::class, mappedBy="product", cascade={"remove", "persist"})
+     * @Groups({"read","write"})
      */
     private $offers;
 

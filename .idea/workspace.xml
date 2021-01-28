@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -21,11 +24,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a978a308-d810-42f2-9c3e-398e3b75f3fa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientApp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/clientApp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientApp/index.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/clientApp/src/getData.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientApp/src/getData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientApp/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientApp/src/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientApp/src/view.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientApp/src/view.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Offer.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Offer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Product.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -212,7 +212,8 @@
       <workItem from="1611162163543" duration="2927000" />
       <workItem from="1611216428013" duration="119000" />
       <workItem from="1611216560145" duration="11713000" />
-      <workItem from="1611304130404" duration="3447000" />
+      <workItem from="1611304130404" duration="4505000" />
+      <workItem from="1611828477263" duration="2016000" />
     </task>
     <servers />
   </component>
@@ -248,5 +249,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1680.26.1680.1010@0.0.1920.1040" timestamp="1611144515505" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1611847018540">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1680.26.1680.1010@0.0.1920.1040" timestamp="1611847018540" />
   </component>
 </project>

@@ -6,10 +6,11 @@ use ApiPlatform\Core\Annotation\ApiProperty;
 use ApiPlatform\Core\Annotation\ApiResource;
 use App\Repository\OfferRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Annotation\Groups;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
- * @ApiResource()
+ * @ApiResource(iri="http://schema.org/Product", normalizationContext={"groups"={"read"}}, denormalizationContext={"groups"={"write"}})
  * @ORM\Entity(repositoryClass="App\Repository\OfferRepository", repositoryClass=OfferRepository::class)
  */
 class Offer
@@ -23,6 +24,10 @@ class Offer
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups ({"read","write"})
+     * @Assert\Url
+     * @Assert\NotNull
+     * @ApiProperty(iri="http://schema.org/url")
      */
     private $url;
 
@@ -31,16 +36,19 @@ class Offer
      * @ORM\Column(type="float")
      * @ApiProperty(iri="http://schema.org/price")
      * @Assert\NotNull
+     * @Groups ({"read","write"})
      */
     private $price;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups ({"read","write"})
      */
     private $priceCurrency;
 
     /**
      * @ORM\ManyToOne(targetEntity=Product::class, inversedBy="offers")
+     * @Groups ({"read","write"})
      */
     private $product;
 
