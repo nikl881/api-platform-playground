@@ -7,13 +7,13 @@ export function show(data) {
     item.innerHTML = '';
 
     for (var i = 0; i <= data.length - 1; i++) {
-        if (typeof data[i].thumbnailImage !== 'undefined')
-            var imageUrl = baseURL + '/images/thumbnails/' + data[i].thumbnailImage;
+        if (typeof data[i].thumbnail_image !== 'undefined')
+            var imageUrl = baseURL + '/images/thumbnails/' + data[i].thumbnail_image;
 
         // eslint-disable-next-line no-redeclare
         else var imageUrl = '';
 
-        // console.log(data[i].thumbnailImage);
+        console.log(data[i].thumbnail_image);
 
         data_item += '<ul><li><b>' + data[i].name + '</b> ' + data[i].description + '</li><li><img width="100" height="50" src="' + imageUrl + '" alt="img"></li><li>Offers</li>';
 

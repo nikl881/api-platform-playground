@@ -10,6 +10,20 @@ export const getData = (event) => {
         .then(function (response) {
 
             console.log(response);
+
+            var el = document.createElement('script');
+            el.type = 'application/ld+json';
+            var jsonLd = {
+                "@context": "http://schema.org",
+                "@id" : "/api/product",
+                "@type": "hydra:Collection",
+            }
+
+            jsonLd['hydra:member'] = response.data['hydra:member'];
+            el.text = JSON.stringify(jsonLd);
+            document.querySelector('head').appendChild(el);
+            console.log(el.text);
+
             const searchButton = document.getElementById("search-button");
             const orderByName = document.getElementById("order-by-name");
             const filterWithImages = document.getElementById("filter-images-only");
