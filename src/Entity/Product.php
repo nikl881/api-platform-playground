@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use ApiPlatform\Core\Annotation\ApiFilter;
+use ApiPlatform\Core\Annotation\ApiProperty;
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\OrderFilter;
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\ExistsFilter;
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\SearchFilter;
@@ -29,43 +30,44 @@ class Product
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
-     * @Groups ({"read"})
+     * @Groups({"read"})
      */
     private $id;
 
     /**
      * @ORM\Column(type="string", length=255)
-     * @Groups ({"read","write"})
+     * @Groups({"read","write"})
      */
     private $name;
 
     /**
      * @ORM\Column(type="string", length=255)
-     * @Groups ({"read","write"})
+     * @Groups({"read","write"})
      */
     private $description;
 
     /**
      * @ORM\Column (type="string", length=100, nullable=true)
-     * @Groups ({"read","write"})
+     * @Groups({"read","write"})
      */
     private $thumbnail_image;
 
     /**
      * @Vich\UploadableField(mapping="thumbnails", fileNameProperty="thumbnail_image")
-     * @Groups ({"read","write"})
+     * @Groups({"read","write"})
      */
     private $thumbnailFile;
 
     /**
      * @ORM\Column (type="datetime")
-     * @Groups ({"read", "write"})
+     * @Groups({"read", "write"})
      */
     private $updatedAt;
 
     /**
      * @ORM\OneToMany(targetEntity=Offer::class, mappedBy="product", cascade={"remove", "persist"})
      * @Groups({"read","write"})
+     * @ApiProperty(attributes={"fetchEager": false})
      */
     private $offers;
 
