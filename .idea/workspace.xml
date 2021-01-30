@@ -23,11 +23,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a978a308-d810-42f2-9c3e-398e3b75f3fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/clientBackend/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientBackend/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientBackend/src/actions/Products.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientBackend/src/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientBackend/src/actions/Offer/AddOffer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientBackend/src/actions/Offer/Test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientBackend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientBackend/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientBackend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/clientBackend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientBackend/src/actions/Products.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientBackend/src/actions/Products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Offer.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Offer.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +196,7 @@
       <recent name="C:\Users\Nilla\api-platform-playground\clientBackend" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
+  <component name="RunManager" selected="JavaScript Debug.index.html (1)">
     <configuration name="index.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/api-platform-playground/clientBackend/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -203,8 +205,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.index.html (1)" />
+        <item itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
   </component>
@@ -226,7 +228,8 @@
       <workItem from="1611828477263" duration="3419000" />
       <workItem from="1611910802886" duration="6397000" />
       <workItem from="1611918717322" duration="692000" />
-      <workItem from="1611928972288" duration="1923000" />
+      <workItem from="1611928972288" duration="2629000" />
+      <workItem from="1611993670278" duration="4762000" />
     </task>
     <servers />
   </component>
@@ -246,10 +249,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="677" y="257" key="#ESLint" timestamp="1611930413374">
+    <state x="677" y="257" key="#ESLint" timestamp="1611995316322">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="677" y="257" key="#ESLint/0.0.1920.1040/-1680.26.1680.1010@0.0.1920.1040" timestamp="1611930413374" />
+    <state x="677" y="257" key="#ESLint/0.0.1920.1040/-1680.26.1680.1010@0.0.1920.1040" timestamp="1611995316322" />
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611144598564">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

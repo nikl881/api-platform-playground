@@ -3,6 +3,7 @@ import {baseURL} from "../config.js";
 
 export class Products {
     constructor() {
+        // eslint-disable-next-line no-undef
         axios.get(baseURL + '/api/products?pagination=false')
             .then(response => {
                 // console.log(response.data['hydra:member']);
