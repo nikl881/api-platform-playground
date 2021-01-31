@@ -23,13 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a978a308-d810-42f2-9c3e-398e3b75f3fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/clientBackend/src/actions/Offer/AddOffer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientBackend/src/actions/Offer/Test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientBackend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientBackend/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientBackend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/clientBackend/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientBackend/src/actions/Products.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientBackend/src/actions/Products.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Offer.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Offer.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,7 +223,7 @@
       <workItem from="1611910802886" duration="6397000" />
       <workItem from="1611918717322" duration="692000" />
       <workItem from="1611928972288" duration="2629000" />
-      <workItem from="1611993670278" duration="4762000" />
+      <workItem from="1611993670278" duration="6054000" />
     </task>
     <servers />
   </component>

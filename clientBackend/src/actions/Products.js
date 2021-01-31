@@ -9,15 +9,14 @@ export class Products {
                 // console.log(response.data['hydra:member']);
                 response.data['hydra:member'].forEach(product => {
                     this.addOptionElement(product.name, product.id)
-                } )
+                })
             })
-            .catch(function (error){
+            .catch(function (error) {
                 console.log(error);
             })
     }
 
-    addOptionElement(text, value)
-    {
+    addOptionElement(text, value) {
         let option = document.createElement("option");
         option.text = text;
         option.value = value;

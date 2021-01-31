@@ -1,15 +1,14 @@
 import {baseURL} from "../../config";
 
-export class AddOffer  {
+export class AddOffer {
 
 
-    AddOffer(url,price,priceCurrency,product_id)
-    {
+    AddOffer(url, price, priceCurrency, product_id) {
         let params = {
             "url": url,
             "price": price,
             "priceCurrency": priceCurrency,
-            "product": "api/products/"+product_id
+            "product": "api/products/" + product_id
         }
 
         let config = {
@@ -20,7 +19,7 @@ export class AddOffer  {
         }
 
         // eslint-disable-next-line no-undef
-        axios.post(baseURL+'/api/offers', params, config)
+        axios.post(baseURL + '/api/offers', params, config)
             .then((response) => {
                 console.log(response);
             }).catch((error) => {
