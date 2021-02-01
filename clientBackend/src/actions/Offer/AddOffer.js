@@ -1,4 +1,4 @@
-import {baseURL} from "../../config";
+
 
 export class AddOffer {
 

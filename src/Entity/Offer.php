@@ -10,7 +10,7 @@ use Symfony\Component\Serializer\Annotation\Groups;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
- * @ApiResource(iri="http://schema.org/Offer", normalizationContext={"groups"={"read"}}, denormalizationContext={"groups"={"write"}})
+ * @ApiResource(iri="http://schema.org/Offer", normalizationContext={"groups"={"read"}}, denormalizationContext={"groups"={"write"}}, attributes={"pagination_enabled=false})
  * @ORM\Entity(repositoryClass="App\Repository\OfferRepository", repositoryClass=OfferRepository::class)
  */
 class Offer

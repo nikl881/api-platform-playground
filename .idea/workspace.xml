@@ -23,7 +23,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a978a308-d810-42f2-9c3e-398e3b75f3fa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/clientBackend/src/actions/Offer/AddTest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientBackend/src/actions/Offer/DeleteOffer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientBackend/src/actions/Offer/GetOffers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientBackend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientBackend/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientBackend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/clientBackend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientBackend/src/actions/Offer/AddOffer.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientBackend/src/actions/Offer/AddOffer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientBackend/src/actions/Offer/Test.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,6 +231,8 @@
       <workItem from="1611918717322" duration="692000" />
       <workItem from="1611928972288" duration="2629000" />
       <workItem from="1611993670278" duration="6054000" />
+      <workItem from="1612108889457" duration="169000" />
+      <workItem from="1612172776966" duration="3395000" />
     </task>
     <servers />
   </component>
@@ -255,6 +264,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="708" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1680.26.1680.1010@0.0.1920.1040" timestamp="1611917569126" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1612173244639">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1680.26.1680.1010@0.0.1920.1040" timestamp="1612173244639" />
     <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1611917847894">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -307,13 +320,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/-1680.26.1680.1010@0.0.1920.1040" timestamp="1611164508420" />
+    <state x="307" y="420" width="1610" height="675" key="dock-window-1" timestamp="1612109058970">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="307" y="420" width="1610" height="675" key="dock-window-1/0.0.1920.1040/-1680.26.1680.1010@0.0.1920.1040" timestamp="1612109058970" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1611144515505">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1680.26.1680.1010@0.0.1920.1040" timestamp="1611144515505" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1611847018540">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1612173741614">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1680.26.1680.1010@0.0.1920.1040" timestamp="1611847018540" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1680.26.1680.1010@0.0.1920.1040" timestamp="1612173741614" />
   </component>
 </project>
